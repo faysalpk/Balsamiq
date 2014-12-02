@@ -1,0 +1,153 @@
+/*
+  =require twitter-bootstrap-static/bootstrap
+
+  Use Font Awesome icons (default)
+  To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
+  =require twitter-bootstrap-static/fontawesome
+  */
+@font-face {
+  font-family: 'PT Sans'; 
+  src: url('/assets/PTN57F_W.eot'); 
+  src: local('PT Sans'), 
+  url('/assets/PTC75F_W.woff') format('woff'),
+  url('/assets/PTC75F_W.ttf') format('truetype'), 
+  url('/assets/PTC75F_W.svg#PTSans-Regular') format('svg');}
+body{
+  background: none repeat scroll 0 0 rgb(245, 245, 245);
+  font-family: 'PT Sans'; 
+}
+h2{
+  font-family: 'PT Sans';
+
+}
+.navbar{
+  background-color: #232e34;
+  border: none;
+  margin-bottom:0px;
+  border-radius:0px;
+}
+.navbar ul li a{
+  color: #fff;
+}
+.navbar ul li a:hover{
+  color: #fff;
+}
+.navbar-brand{
+  font-size: 24px;
+  
+  color: #fff;
+}
+.brand-margin{
+margin-right: 10px;
+}
+.navbar-brand:hover{
+  color: #fff;
+}
+.navbar-nav{
+  margin-top: 10px;
+}
+.slider{
+  background-image: url("/assets/bg.png");
+  
+  min-height: 250px;
+
+}
+.container h1,h4{
+  text-align: center;
+  color: #fff;
+  font-family: 'PT Sans'; 
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+.container p a{
+  text-decoration: none;
+  color: blue;
+  background-color: #fff;
+  padding: 10px;
+  opacity: 0.4;
+  font-family: 'PT Sans'; 
+  border-radius: 3px;
+
+
+}
+.searchfield{
+  background: url("/assets/search.png") no-repeat;
+  background-position: 9px 15px;
+  padding:12px 10px 10px 28px;
+  width: 29%;
+  font-size: 15px;
+  background-color: #006b8b;
+  border: none;
+  border-radius: 3px;
+  float: left;
+  margin: 11px 3px 0px 6px;
+  color: #fff;
+}
+.btn_sb{
+background-color: #ff0;
+    border: medium none;
+    border-radius: 3px;
+    padding: 11px 0;
+    width: 9%;
+     margin: 11px 3px 0px 6px;
+}
+footer{
+  background: #232e34;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+}
+footer p{
+  color: #fff;
+}
+.social_icons{
+  text-align: center;
+  padding: 10px 0px 5px 0px;
+} 
+.reg_fields{
+  height: 41px;
+  margin: 0 8px 14px 0;
+  width: 49%;
+  padding: 0 0 0 10px;
+
+}
+.gray_container{
+  background:rgb(245,245,245);
+  width: 100%;
+  height: auto;
+}
+.regback{
+  background: none repeat scroll 0 0 #fff;
+  border-radius: 7px;
+  margin: 10px;
+  padding: 10px;
+}
+.btnReg{
+  background: none repeat scroll 0 0 #55acee;
+  border: medium none;
+  border-radius: 9px;
+  color: #fff;
+  font-weight: bold;
+  height: 33px;
+  width: 78px;
+  margin: 14px 0px 5px 0px;
+}
+.username{
+  color: #fff;
+  font-family: 'PT Sans';
+  text-transform: uppercase;
+}
+.welcom_block p{
+  min-height: 250px;
+}
+.dropdown-menu{
+  right: 0 !important;
+  left: auto !important;
+}
+ul.dropdown-menu-1 li a{
+  color: #000;
+}
+.btn{
+  padding: 0px 0px ;
+}

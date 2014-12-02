@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Balsamiq</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <!-- Start  header -->
+    <%= render :partial => "/layouts/header" %>
+  <!-- End header -->
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
+  <div class="gray_container">
+    <div class="container centercontainer">
+      <div class="row">
+        <div class="col-md-12"><%= yield %></div>
+       
+      </div>
+    </div>
+  </div>
+<!-- footer -->
+<%= render :partial => "/layouts/footer" %>
+<!-- end footer -->
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<section class="regback">
+  <div class="container regback">
+<h2>New Company</h2>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+ 
+
+  <%= f.text_field :name, :autofocus => true, :class => "reg_fields", :placeholder => "First Name" %>
+  <%= f.text_field :lastname, :autofocus => true, :class => "reg_fields", :placeholder => "last Name" %>
+  <%= f.email_field :email, :autofocus => true, :class => "reg_fields", :placeholder => "Email"  %>
+ 
+  <%= f.password_field :password, :class => "reg_fields", :class => "reg_fields", :placeholder => "Password" %>
+  <%= f.password_field :password_confirmation,:class => "reg_fields", :class => "reg_fields", :placeholder => "ConfirmPassword"  %><br />
+
+  <%= f.file_field :avatar %>
+  
+  <%= f.submit "Sign up",:class => "btnReg" %>
+<% end %>
+
+<%= render "devise/shared/links" %>
+</div>
+</section>
